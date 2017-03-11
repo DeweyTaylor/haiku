@@ -1,0 +1,13 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy vesa ;
+
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
+UsePrivateHeaders [ FDirName graphics legacy vesa ] ;
+UsePrivateKernelHeaders ;
+
+KernelAddon vesa :
+	device.cpp
+	driver.cpp
+	vesa.cpp
+	vga.cpp
+	;
+

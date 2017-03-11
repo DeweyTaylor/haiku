@@ -1,0 +1,19 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy ;
+
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy 3dfx ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy ati ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy common ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy et6x00 ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy framebuffer ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy intel_810 ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy intel_extreme ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy matrox ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy neomagic ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy nvidia ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy nvidia_gpgpu ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy radeon ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy radeon_hd ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy s3 ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy skeleton ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy vesa ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy via ;

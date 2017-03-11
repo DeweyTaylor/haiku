@@ -1,0 +1,11 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy via ;
+
+SetSubDirSupportedPlatformsBeOSCompatible ;
+
+UsePrivateHeaders graphics ;
+UsePrivateSystemHeaders ;
+UsePrivateHeaders [ FDirName graphics legacy via ] ;
+
+KernelAddon via :
+	driver.c
+;

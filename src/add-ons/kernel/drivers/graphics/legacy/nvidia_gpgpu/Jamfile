@@ -1,0 +1,10 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy nvidia_gpgpu ;
+
+SetSubDirSupportedPlatformsBeOSCompatible ;
+
+UsePrivateHeaders graphics libroot ;
+UsePrivateHeaders [ FDirName graphics legacy nvidia_gpgpu ] ;
+
+KernelAddon nvidia_gpgpu :
+	driver.c
+;

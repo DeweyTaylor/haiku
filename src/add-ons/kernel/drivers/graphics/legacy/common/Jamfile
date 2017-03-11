@@ -1,0 +1,13 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy common ;
+
+SetSubDirSupportedPlatformsBeOSCompatible ;
+
+SubDirCcFlags -DENABLE_LOGGING -DLOG_INCLUDE_STARTUP ;
+
+UsePrivateHeaders graphics legacy ;
+UsePrivateHeaders [ FDirName graphics legacy radeon ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
+
+StaticLibrary libgraphicscommon.a :
+	memory_manager.c
+;

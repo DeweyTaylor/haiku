@@ -1,0 +1,50 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics drm ;
+
+UsePrivateHeaders [ FDirName graphics drm ] ;
+
+KernelAddon drm :
+	drm_auth.c
+	drm_bufs.c
+	drm_cache.c
+	drm_context.c
+	drm_dma.c
+	drm_fops.c
+	drm_gem.c
+	drm_ioctl.c
+	drm_irq.c
+	drm_lock.c
+	drm_memory.c
+	drm_drv.c
+	drm_scatter.c
+	drm_pci.c
+	drm_platform.c
+	drm_sysfs.c
+	drm_hashtab.c
+	drm_mm.c
+	drm_crtc.c
+	drm_fourcc.c
+	drm_modes.c
+	drm_edid.c
+	drm_info.c
+	drm_encoder_slave.c
+	drm_trace_points.c
+	drm_global.c
+	drm_prime.c
+	drm_rect.c
+	drm_vma_manager.c
+	drm_flip_work.c
+	drm_modeset_lock.c
+	drm_atomic.c
+	drm_bridge.c
+	drm_framebuffer.c
+	drm_connector.c
+	drm_blend.c
+	drm_encoder.c
+	drm_mode_object.c
+	drm_property.c
+	drm_plane.c
+	drm_color_mgmt.c
+	drm_print.c
+	drm_dumb_buffers.c
+	drm_mode_config.c
+;

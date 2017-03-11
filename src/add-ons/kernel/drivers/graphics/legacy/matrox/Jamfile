@@ -1,0 +1,11 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy matrox ;
+
+SetSubDirSupportedPlatformsBeOSCompatible ;
+
+UsePrivateSystemHeaders ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy matrox ] ;
+
+KernelAddon matrox :
+	driver.c
+;

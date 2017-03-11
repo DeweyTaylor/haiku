@@ -1,0 +1,28 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy radeon ;
+
+SetSubDirSupportedPlatformsBeOSCompatible ;
+
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy radeon ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
+
+StaticLibrary libradeon.a :
+	pll_access.c
+	utils.c
+;
+
+KernelAddon radeon :
+	driver.c
+	agp.c
+	bios.c
+	detect.c
+	DMA.c
+	global_data.c
+	init.c
+	irq.c
+	mem_controller.c
+	CP_setup.c
+	PCI_GART.c
+	vip.c
+	: libgraphicscommon.a libradeon.a
+;

@@ -1,0 +1,11 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy neomagic ;
+
+SetSubDirSupportedPlatformsBeOSCompatible ;
+
+UsePrivateSystemHeaders ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy neomagic ] ;
+
+KernelAddon neomagic :
+	driver.c
+;

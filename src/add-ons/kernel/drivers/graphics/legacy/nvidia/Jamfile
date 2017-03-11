@@ -1,0 +1,12 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy nvidia ;
+
+SetSubDirSupportedPlatformsBeOSCompatible ;
+
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateSystemHeaders ;
+UsePrivateHeaders [ FDirName graphics legacy nvidia ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
+
+KernelAddon nvidia :
+	driver.c
+;

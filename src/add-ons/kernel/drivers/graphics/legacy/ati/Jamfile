@@ -1,0 +1,9 @@
+SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy ati ;
+
+UsePrivateHeaders [ FDirName graphics legacy ati ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
+UsePrivateHeaders graphics kernel ;
+
+KernelAddon ati :
+	driver.cpp
+;
