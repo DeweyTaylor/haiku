@@ -10,48 +10,48 @@ UseHeaders $(HAIKU_PRIVATE_KERNEL_HEADERS) : true ;
 SubDirCcFlags [ FDefines _KERNEL=1 B_USE_POSITIVE_POSIX_ERRORS=1 __KERNEL__=1 ] ;
 
 KernelAddon drm :
-	drm_auth.c
-	drm_bufs.c
-	drm_cache.c
-	drm_context.c
-	drm_dma.c
-	drm_fops.c
-	drm_gem.c
-	drm_ioctl.c
-	drm_irq.c
-	drm_lock.c
-	drm_memory.c
-	drm_drv.c
-	drm_scatter.c
-	drm_pci.c
-	drm_platform.c
-	drm_sysfs.c
-	drm_hashtab.c
-	drm_mm.c
-	drm_crtc.c
-	drm_fourcc.c
-	drm_modes.c
-	drm_edid.c
-	drm_info.c
-	drm_encoder_slave.c
-	drm_trace_points.c
-	drm_global.c
-	drm_prime.c
-	drm_rect.c
-	drm_vma_manager.c
-	drm_flip_work.c
-	drm_modeset_lock.c
-	drm_atomic.c
-	drm_bridge.c
-	drm_framebuffer.c
-	drm_connector.c
-	drm_blend.c
-	drm_encoder.c
-	drm_mode_object.c
-	drm_property.c
-	drm_plane.c
-	drm_color_mgmt.c
-	drm_print.c
-	drm_dumb_buffers.c
-	drm_mode_config.c
+	# drm_auth.c			# NOT Complete
+	# drm_bufs.c			# NOT Complete
+	# drm_cache.c			# NOT Complete
+	# drm_context.c			# NOT Complete
+	# drm_dma.c				# NOT Complete
+	# drm_fops.c			# NOT Complete
+	# drm_gem.c				# NOT Complete
+	# drm_ioctl.c			# NOT Complete
+	# drm_irq.c				# NOT Complete
+	# drm_lock.c			# NOT Complete
+	# drm_memory.c			# NOT Complete
+	# drm_drv.c				# NOT Complete
+	# drm_scatter.c			# NOT Complete
+	# drm_pci.c				# NOT Complete
+	# drm_platform.c		# NOT Complete
+	# drm_sysfs.c			# NOT Complete
+	# drm_hashtab.c			# NOT Complete
+	# drm_mm.c				# NOT Complete
+	# drm_crtc.c			# NOT Complete
+	# drm_fourcc.c			# NOT Complete
+	# drm_modes.c			# NOT Complete
+	# drm_edid.c			# NOT Complete
+	# drm_info.c			# NOT Complete
+	# drm_encoder_slave.c	# NOT Complete
+	# drm_trace_points.c	# NOT Complete
+	# drm_global.c			# NOT Complete
+	# drm_prime.c			# NOT Complete
+	# drm_rect.c			# NOT Complete
+	# drm_vma_manager.c		# NOT Complete
+	# drm_flip_work.c		# NOT Complete
+	# drm_modeset_lock.c	# NOT Complete
+	# drm_atomic.c			# NOT Complete
+	# drm_bridge.c			# NOT Complete
+	# drm_framebuffer.c		# NOT Complete
+	# drm_connector.c		# NOT Complete
+	# drm_blend.c			# NOT Complete
+	# drm_encoder.c			# NOT Complete
+	# drm_mode_object.c		# NOT Complete
+	# drm_property.c		# NOT Complete
+	# drm_plane.c			# NOT Complete
+	# drm_color_mgmt.c		# NOT Complete
+	# drm_print.c			# NOT Complete
+	# drm_dumb_buffers.c	# NOT Complete
+	# drm_mode_config.c		# NOT Complete
 ;
