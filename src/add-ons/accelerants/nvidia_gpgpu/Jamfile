@@ -2,8 +2,8 @@ SubDir HAIKU_TOP src add-ons accelerants nvidia_gpgpu ;
 
 SetSubDirSupportedPlatformsBeOSCompatible ;
 
-UsePrivateHeaders graphics ;
-UsePrivateHeaders [ FDirName graphics nvidia_gpgpu ] ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy nvidia_gpgpu ] ;
 UseHeaders [ FDirName $(SUBDIR) engine ] ;
 
 Addon nvidia_gpgpu.accelerant :

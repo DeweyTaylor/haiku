@@ -2,8 +2,8 @@ SubDir HAIKU_TOP src add-ons accelerants skeleton engine ;
 
 SetSubDirSupportedPlatformsBeOSCompatible ;
 
-UsePrivateHeaders graphics ;
-UsePrivateHeaders [ FDirName graphics skeleton ] ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy skeleton ] ;
 
 StaticLibrary libskeleton_engine.a :
 	acc.c

@@ -2,8 +2,8 @@ SubDir HAIKU_TOP src add-ons accelerants matrox ;
 
 SetSubDirSupportedPlatformsBeOSCompatible ;
 
-UsePrivateHeaders graphics ;
-UsePrivateHeaders [ FDirName graphics matrox ] ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy matrox ] ;
 UseHeaders [ FDirName $(SUBDIR) engine ] ;
 
 Addon matrox.accelerant :

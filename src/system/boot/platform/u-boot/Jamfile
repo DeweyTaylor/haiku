@@ -6,8 +6,8 @@ SubDirHdrs $(HAIKU_TOP) headers private kernel platform $(TARGET_BOOT_PLATFORM) 
 SubDirHdrs $(HAIKU_TOP) src system boot arch $(TARGET_KERNEL_ARCH) ;
 
 UsePrivateHeaders [ FDirName kernel disk_device_manager ] ;
-UsePrivateHeaders [ FDirName graphics common ] ;
-UsePrivateHeaders [ FDirName graphics vesa ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
+UsePrivateHeaders [ FDirName graphics legacy vesa ] ;
 UsePrivateHeaders [ FDirName storage ] ;
 UsePrivateHeaders [ FDirName kernel arch generic ] ;
 

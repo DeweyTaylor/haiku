@@ -3,9 +3,9 @@ SubDir HAIKU_TOP src add-ons accelerants common ;
 SetSubDirSupportedPlatformsBeOSCompatible ;
 SetSubDirSupportedPlatforms haiku haiku_host libbe_test ;
 
-UsePrivateHeaders graphics ;
-UsePrivateHeaders [ FDirName graphics radeon ] ;
-UsePrivateHeaders [ FDirName graphics common ] ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy radeon ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
 
 StaticLibrary libaccelerantscommon.a :
 	compute_display_timing.cpp

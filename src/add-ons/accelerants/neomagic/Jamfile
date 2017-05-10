@@ -2,8 +2,8 @@ SubDir HAIKU_TOP src add-ons accelerants neomagic ;
 
 SetSubDirSupportedPlatformsBeOSCompatible ;
 
-UsePrivateHeaders graphics ;
-UsePrivateHeaders [ FDirName graphics neomagic ] ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy neomagic ] ;
 UseHeaders [ FDirName $(SUBDIR) engine ] ;
 
 Addon neomagic.accelerant :

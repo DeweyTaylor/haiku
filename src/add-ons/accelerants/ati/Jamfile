@@ -1,8 +1,8 @@
 SubDir HAIKU_TOP src add-ons accelerants ati ;
 
-UsePrivateHeaders graphics ;
-UsePrivateHeaders [ FDirName graphics ati ] ;
-UsePrivateHeaders [ FDirName graphics common ] ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy ati ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
 
 Addon ati.accelerant :
 	accelerant.cpp
@@ -11,7 +11,7 @@ Addon ati.accelerant :
 	hooks.cpp
 	mode.cpp
 	overlay.cpp
-		
+
 	mach64_cursor.cpp
 	mach64_dpms.cpp
 	mach64_draw.cpp
@@ -19,7 +19,7 @@ Addon ati.accelerant :
 	mach64_mode.cpp
 	mach64_overlay.cpp
 	mach64_util.cpp
-	
+
 	rage128_cursor.cpp
 	rage128_dpms.cpp
 	rage128_draw.cpp

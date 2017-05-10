@@ -1,6 +1,6 @@
 SubDir HAIKU_TOP src add-ons accelerants et6x00 ;
 
-UsePrivateHeaders [ FDirName graphics et6x00 ] ;
+UsePrivateHeaders [ FDirName graphics legacy et6x00 ] ;
 
 Addon et6x00.accelerant :
 	Acceleration.c

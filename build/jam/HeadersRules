@@ -433,7 +433,7 @@ rule UseBuildFeatureHeaders feature : attribute
 
 rule FStandardOSHeaders
 {
-	local osIncludes = add-ons add-ons/file_system add-ons/graphics
+	local osIncludes = add-ons add-ons/file_system add-ons/graphics/legacy
 					   add-ons/input_server add-ons/registrar
 					   add-ons/screen_saver
 					   add-ons/tracker app device drivers game interface
@@ -447,7 +447,7 @@ rule FStandardOSHeaders
 
 rule FStandardHeaders architecture
 {
-	local osIncludes = add-ons add-ons/file_system add-ons/graphics
+	local osIncludes = add-ons add-ons/file_system add-ons/graphics/legacy
 					   add-ons/input_server add-ons/registrar
 					   add-ons/screen_saver
 					   add-ons/tracker app device drivers game interface

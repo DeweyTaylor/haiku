@@ -1,8 +1,8 @@
 SubDir HAIKU_TOP src add-ons media media-add-ons radeon ;
 
-UsePrivateHeaders graphics ;
-UsePrivateHeaders [ FDirName graphics common ] ;
-UsePrivateHeaders [ FDirName graphics radeon ] ;
+UsePrivateHeaders graphics legacy ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
+UsePrivateHeaders [ FDirName graphics legacy radeon ] ;
 
 local architectureObject ;
 for architectureObject in [ MultiArchSubDirSetup ] {

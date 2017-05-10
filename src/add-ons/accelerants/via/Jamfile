@@ -2,8 +2,8 @@ SubDir HAIKU_TOP src add-ons accelerants via ;
 
 SetSubDirSupportedPlatformsBeOSCompatible ;
 
-UsePrivateHeaders graphics ;
-UsePrivateHeaders [ FDirName graphics via ] ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy via ] ;
 UseHeaders [ FDirName $(SUBDIR) engine ] ;
 
 Addon via.accelerant :

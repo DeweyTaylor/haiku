@@ -14,7 +14,7 @@ if $(TARGET_PLATFORM) = libbe_test {
 
 UseLibraryHeaders agg png ;
 UseBuildFeatureHeaders zlib ;
-UsePrivateHeaders [ FDirName graphics common ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
 
 # headers/build/private/kernel is needed for safemode.h and syscalls.h.
 # headers/private/kernel for the util/* stuff.

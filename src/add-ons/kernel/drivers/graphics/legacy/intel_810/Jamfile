@@ -2,7 +2,8 @@ SubDir HAIKU_TOP src add-ons kernel drivers graphics legacy intel_810 ;
 
 UsePrivateHeaders [ FDirName graphics legacy intel_810 ] ;
 UsePrivateHeaders [ FDirName graphics legacy common ] ;
-UsePrivateHeaders graphics kernel ;
+UsePrivateHeaders kernel ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
 
 KernelAddon intel_810 :
 	driver.cpp

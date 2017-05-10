@@ -1,8 +1,8 @@
 SubDir HAIKU_TOP src add-ons accelerants framebuffer ;
 
-UsePrivateHeaders graphics ;
-UsePrivateHeaders [ FDirName graphics vesa ] ;
-UsePrivateHeaders [ FDirName graphics common ] ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
+UsePrivateHeaders [ FDirName graphics legacy vesa ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
 
 Addon framebuffer.accelerant :
 	accelerant.cpp

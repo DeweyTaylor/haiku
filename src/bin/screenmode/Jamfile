@@ -2,8 +2,8 @@ SubDir HAIKU_TOP src bin screenmode ;
 
 SetSubDirSupportedPlatformsBeOSCompatible ;
 
-UsePrivateHeaders [ FDirName graphics common ] ;
-UsePrivateHeaders [ FDirName graphics radeon ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
+UsePrivateHeaders [ FDirName graphics legacy radeon ] ;
 	# for multimon.h
 
 SEARCH_SOURCE += [ FDirName $(HAIKU_TOP) src preferences screen ] ;

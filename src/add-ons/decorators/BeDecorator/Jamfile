@@ -7,7 +7,8 @@ UseHeaders [ FDirName $(HAIKU_TOP) src servers app decorator ] ;
 UseHeaders [ FDirName $(HAIKU_TOP) src servers app drawing ] ;
 UseHeaders [ FDirName $(HAIKU_TOP) src servers app drawing Painter ] ;
 UseHeaders [ FDirName $(HAIKU_TOP) src servers app font ] ;
-UsePrivateHeaders app shared interface graphics ;
+UsePrivateHeaders app shared interface ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
 UseLibraryHeaders agg ;
 UsePrivateHeaders kernel ;
 

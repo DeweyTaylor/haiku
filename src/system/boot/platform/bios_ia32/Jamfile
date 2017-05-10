@@ -5,8 +5,8 @@ SetupFeatureObjectsDir $(TARGET_BOOT_PLATFORM) ;
 SubDirHdrs $(HAIKU_TOP) headers private kernel boot platform $(TARGET_BOOT_PLATFORM) ;
 
 UsePrivateHeaders [ FDirName kernel disk_device_manager ] ;
-UsePrivateHeaders [ FDirName graphics common ] ;
-UsePrivateHeaders [ FDirName graphics vesa ] ;
+UsePrivateHeaders [ FDirName graphics legacy common ] ;
+UsePrivateHeaders [ FDirName graphics legacy vesa ] ;
 UsePrivateHeaders [ FDirName storage ] ;
 
 {

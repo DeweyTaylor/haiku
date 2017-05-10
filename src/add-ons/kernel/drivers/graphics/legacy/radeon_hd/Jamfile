@@ -4,7 +4,8 @@ SetSubDirSupportedPlatformsBeOSCompatible ;
 
 UsePrivateHeaders [ FDirName graphics legacy radeon_hd ] ;
 UsePrivateHeaders [ FDirName graphics legacy common ] ;
-UsePrivateHeaders graphics kernel ;
+UsePrivateHeaders kernel ;
+UsePrivateHeaders [ FDirName graphics legacy ] ;
 UsePrivateHeaders shared ;
 UsePrivateKernelHeaders ;
 
@@ -17,5 +18,5 @@ KernelAddon radeon_hd :
 ;
 
 SEARCH on [ FGristFiles
-		kernel_cpp.cpp 
+		kernel_cpp.cpp
 	] = [ FDirName $(HAIKU_TOP) src system kernel util ] ;

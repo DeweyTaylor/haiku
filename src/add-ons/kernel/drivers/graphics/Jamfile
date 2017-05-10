@@ -1,4 +1,4 @@
 SubDir HAIKU_TOP src add-ons kernel drivers graphics ;
 
-SubInclude HAIKU_TOP src add-ons kernel drivers graphics drm ;
 SubInclude HAIKU_TOP src add-ons kernel drivers graphics legacy ;
+SubInclude HAIKU_TOP src add-ons kernel drivers graphics drm ;
